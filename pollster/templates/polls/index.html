@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="text-center mb-3">Poll Questions</h1>
+    {% if latest_question_list %}
+        {% for question in latest_question_list %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="lead">{{ question.question_text }}</div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No Polls Available</p>
+    {% endif %}
+{% endblock %}
