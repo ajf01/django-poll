@@ -1,1 +1,1 @@
-# django-poll
+# django-poll Traversy Media Guide
